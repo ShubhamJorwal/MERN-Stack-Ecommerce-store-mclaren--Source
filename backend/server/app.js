@@ -4,14 +4,13 @@ const cookieParser = require("cookie-parser")
 const cors = require('cors')
 const bodyParser = require("body-parser")
 const fileUpload = require("express-fileUpload")
+const dotenv = require("dotenv");
 const path = require("path");
 
 
 // Config
-if (process.env.NODE_ENV !== "PRODUCTION") {
-    require("dotenv").config({ path: "server/Config/config.env" });
-  }
-  
+dotenv.config({ path: "server/Config/config.env" })
+
 const errorMiddleware = require("./Middleware/Error")
 
 app.use(express.json())
