@@ -1,0 +1,99 @@
+@use "../../scss/" as *;
+
+#partProducts {
+  width: 70vw;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+
+  #prod01 {
+    margin-right: 0.3vw;
+  }
+
+  #prod02 {
+    margin-left: 0.3vw;
+  }
+
+  img {
+    width: 40vw;
+    height: 50vh;
+    transition: 0.3s all;
+
+    &:hover {
+      transform: scale(1.01);
+    }
+  }
+
+  h1 {
+    font: 300 1.5vw $font-family2;
+    color: $main-color;
+    margin-bottom: 0;
+  }
+  p {
+    font: 300 0.85vw $font-family2;
+    color: $whcolor;
+    margin: 0;
+    margin-bottom: 1vw;
+  }
+  #twobtns {
+    margin-bottom: 1vw;
+    button {
+      background-color: $main-color;
+      color: $black;
+      padding: 0.4vmax 2vmax;
+      font: 300 0.8vmax $font-family;
+      letter-spacing: 0.1rem;
+      text-transform: uppercase;
+      margin: auto;
+      cursor: pointer;
+      position: relative;
+      transition: 0.4s all cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      z-index: 2;
+      margin-right: 0.7vw;
+      border: 1px solid transparent;
+
+      &:after {
+        content: "";
+        position: absolute;
+        transition: 0.4s all cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      }
+      &:after {
+        width: 0;
+        height: 100%;
+        background: $black;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: 0.4s all cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      }
+      &:hover {
+        color: $whcolor;
+        border: 1px solid $main-color;
+        &:after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+#carsfadelook {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin: 0.3vw;
+  img {
+    // width: 30vw;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 1s ease-in-out;
+    &:hover  {
+      transform: scale(1.1);
+    }
+  }
+  #coupe720 {
+    position: relative;
+    overflow: hidden;
+  }
+}

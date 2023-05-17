@@ -1,0 +1,14 @@
+@use "../../scss/" as *;
+
+#headingforeach {
+  width: 80vw;
+  margin: auto;
+  h1 {
+    text-align: center;
+    color: $whcolor;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-weight: 300;
+    font-size: 4vmin;
+  }
+}

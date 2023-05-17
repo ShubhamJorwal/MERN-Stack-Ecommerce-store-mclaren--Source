@@ -1,0 +1,54 @@
+@use "./scss/" as *;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $font-family;
+  overflow-x: hidden;
+  // background-color: rgb(77, 77, 77);
+  background-color: $black;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  background: rgb(56, 56, 56);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255);
+  border-radius: 25px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.greenColorclass {
+  color: green !important;
+}
+.redColorclass {
+  color: red;
+}
+.whiteColorClass {
+  color: $whcolor;
+}
+.marginleftso {
+  margin-left: 1vw;
+}
+.MuiTypography-root {
+  background-color: unset !important;
+}
+
+#wholecomponent {
+  background-color: rgb(4, 18, 27);
+}
+#margin2vw {
+  margin: 2vw 0;
+}
+
+#borderBottom {
+  border-bottom: 1px solid  rgb(8, 55, 83);
+}

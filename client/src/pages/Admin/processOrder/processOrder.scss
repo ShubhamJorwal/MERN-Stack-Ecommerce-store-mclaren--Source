@@ -1,0 +1,98 @@
+@use "../../../scss/" as *;
+
+.confirmOrderPage {
+  border: none;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+.updateOrderForm {
+  margin: 5vmax 0;
+  padding: 3vmax;
+}
+#confircaritelllll {
+    padding-bottom: 0;
+}
+.updateOrderForm > div {
+  display: flex;
+  width: 100%;
+}
+.updateOrderForm > div > select {
+  padding: 1vmax 2vmax;
+  margin: 2rem 0;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  font: 300 0.9vmax $font-family;
+  outline: none;
+  color: $whcolor;
+  background: transparent;
+  border-bottom: 1px solid $main-color;
+  position: relative;
+}
+
+.updateOrderForm > div {
+  display: flex;
+  align-items: center;
+  svg {
+    transform: translateX(1vmax);
+    font-size: 1.6vmax;
+    color: $main-color;
+  }
+}
+
+#srbrn {
+  width: 10vw;
+  margin-left: 2vw !important;
+  border-radius: 0;
+  color: $white;
+  font-family: $font-family;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  line-height: 3rem;
+  padding: 0 38px;
+  border: 1px solid $whcolor;
+  transition: 0.4s all cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  position: absolute;
+  z-index: 2;
+  margin: 2rem 0;
+  &:after {
+    content: "";
+    position: absolute;
+    transition: 0.4s all cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  &:after {
+    width: 0;
+    height: 100%;
+    background: $main-color;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.4s all cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  &:hover {
+    color: $black;
+    border: none;
+    &:after {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .updateOrderForm {
+    padding: 5vmax;
+  }
+
+  .updateOrderForm > div > select {
+    padding: 2.5vmax 5vmax;
+    font: 300 1.7vmax cursive;
+  }
+
+  .updateOrderForm > div > svg {
+    font-size: 2.8vmax;
+  }
+}

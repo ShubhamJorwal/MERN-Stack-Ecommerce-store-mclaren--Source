@@ -1,0 +1,43 @@
+$primary-light: #8abdff;
+
+$primary2: #050127;
+$main-color: #03a9f4;
+$whcolor: rgb(194, 194, 194);
+
+$white: #ffffff;
+$black: #000000;
+
+
+$mobile-width: 600px;
+$tablet-width: 1024px;
+
+@mixin flex($aligin-item, $justify-content) {
+  display: flex;
+  align-items: $aligin-item;
+  justify-content: $justify-content;
+}
+
+@mixin overlay {
+  background-color: rgba($color: #000000, $alpha: 0.6);
+}
+
+@font-face {
+  font-family: "DINNeuzeitGrotesk LT";
+  src: url("DINNeuzeitGroteskLT-Light.eot");
+  src: local("DIN 30640 Neuzeit Grotesk LT Light"),
+    local("DINNeuzeitGroteskLT-Light"),
+    url("DINNeuzeitGroteskLT-Light.eot?#iefix") format("embedded-opentype"),
+    url("DINNeuzeitGroteskLT-Light.woff2") format("woff2"),
+    url("DINNeuzeitGroteskLT-Light.woff") format("woff"),
+    url("DINNeuzeitGroteskLT-Light.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700;900&family=Nunito:wght@200;300;600&display=swap");
+
+$font-family: "DINNeuzeitGrotesk LT ", sans-serif;
+$font-family2: "Montserrat", sans-serif;
+$font-family3: "Comic Neue", sans-serif;

@@ -1,0 +1,9 @@
+@use '../../scss/' as *;
+#usrloggedinac {
+    img {
+        width: 2vw;
+        height: 2vw;
+        background-color: white;
+        border-radius: 5vmax;
+    }
+}

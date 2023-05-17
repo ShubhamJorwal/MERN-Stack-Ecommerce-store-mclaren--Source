@@ -1,0 +1,353 @@
+@use "../../../../scss/" as *;
+
+#logoutuser {
+  span {
+    color: $whcolor;
+  }
+}
+
+.profileContainer {
+  display: flex;
+  width: 100vw;
+  position: relative;
+  top: 0%;
+  max-width: 100%;
+}
+
+.profileContainer > div {
+  display: flex;
+  width: 100vw;
+  max-width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profileContainer > div:first-child > h1 {
+  color: $main-color;
+  font: 500 2.2vmax $font-family3;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.profileContainer > div:first-child > img {
+  width: 12vmax;
+  height: 12vmax;
+  border-radius: 100%;
+  transition: all 0.5s;
+}
+
+.profileContainer > div:first-child > img:hover {
+  transform: scale(1.05);
+}
+
+.profileContainer > div:first-child > a {
+  border: none;
+  background-color: $main-color;
+  font: 900 0.8vmax $font-family3;
+  text-transform: uppercase;
+  color: $black;
+  border-radius: 1vmax;
+  text-decoration: none;
+  padding: 0.5vmax;
+  width: 20%;
+  margin: 2.5vmax;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.profileContainer > div:first-child > a:hover {
+  background-color: $black;
+  color: $whcolor;
+}
+
+.profileContainer > div:last-child {
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 5vmax;
+  box-sizing: border-box;
+}
+
+.profileContainer > div:last-child > div > h4 {
+  color: $main-color;
+  font: 500 1.4vmax $font-family3;
+  border-bottom: 1px solid $main-color;
+  display: table;
+}
+
+.profileContainer > div:last-child > div > p {
+  color: $whcolor;
+  font: 300 1vmax $font-family3;
+  margin: 0.2vmin;
+}
+
+.profileContainer > div:last-child > div:last-child {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.profileContainer > div:last-child > div:last-child > a {
+  border: none;
+  background-color: $main-color;
+  font: 900 1vmax $font-family3;
+  color: $black;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.5vmax;
+  text-align: center;
+  transition: all 0.5s;
+  margin: 0.5vmax 0;
+  border-radius: 2vmax;
+}
+
+.profileContainer > div:last-child > div:last-child > a:hover {
+  background-color: $black;
+  border: 1px solid $whcolor;
+  color: $whcolor;
+}
+
+@media screen and (max-width: 600px) {
+  .profileContainer {
+    flex-direction: column;
+  }
+
+  .profileContainer > div:first-child > h1 {
+    font: 500 3.2vmax "Roboto";
+    transform: translateY(-2vmax);
+  }
+
+  .profileContainer > div:first-child > a {
+    font: 400 1.7vmax "Roboto";
+    padding: 1vmax;
+  }
+
+  .profileContainer > div:last-child {
+    text-align: center;
+    align-items: center;
+  }
+
+  .profileContainer > div:last-child > div > h4 {
+    font: 400 2.5vmax "Roboto";
+  }
+
+  .profileContainer > div:last-child > div > p {
+    font: 400 2vmax cursive;
+    margin: 0.5vmax 0;
+  }
+
+  .profileContainer > div:last-child > div:last-child > a {
+    font: 400 1.8vmax "Roboto";
+    padding: 1vmax;
+    margin: 2vmax 0;
+  }
+}
+
+
+
+
+// update profile // update profile // update profile // update profile // update profile // update profile // update profile // update profile // update profile
+.updateProfileContainer, .updatePasswordContainer,.forgotPasswordContainer,.resetPasswordContainer {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0%;
+  left: 0;
+}
+
+.updateProfileBox,.updatePasswordBox , .forgotPasswordBox,.resetPasswordBox {
+  width: 45vw;
+  height: 70vh;
+  border-radius: 3vmax;
+  box-sizing: border-box;
+  overflow: hidden;
+  border: 1px solid $main-color;
+}
+//forgot pass
+.forgotPasswordBox  {
+  height: 40%;
+}
+
+.updateProfileHeading,.updatePasswordHeading,.forgotPasswordHeading,.resetPasswordHeading {
+  text-align: center;
+  color: $main-color;
+  font: 300 2vmax $font-family3;
+  padding: 1.3vmax;
+  border-bottom: 1px solid $main-color;
+  display: table;
+  margin: auto;
+}
+
+.updateProfileForm ,.updatePasswordForm,.forgotPasswordForm,.resetPasswordForm  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding: 2vmax;
+  justify-content: space-evenly;
+  height: 70%;
+  transition: all 0.5s;
+}
+
+
+.updateProfileForm > div ,.updatePasswordForm > div , .forgotPasswordForm>div,.resetPasswordForm > div  {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.updateProfileForm > div > input , .updatePasswordForm > div > input,.forgotPasswordForm > div > input,.resetPasswordForm > div > input  {
+  cursor: pointer;
+  width: 60%;
+  z-index: 2;
+  height: 5vh;
+  border: 1px solid $main-color;
+  border-radius: 2vmax;
+  margin: 0%;
+  font: 300 0.8vmax $font-family;
+  transition: all 0.5s;
+  padding: 0 1vmax;
+  color: $whcolor;
+  background-color: $black;
+}
+
+.updateProfileForm > div > svg ,.updatePasswordForm > div > svg,.forgotPasswordForm > div > svg,.resetPasswordForm > div > svg {
+  position: relative;
+  font-size: 1.6vmax;
+  margin-right: 1vmax;
+  color: $main-color;
+}
+
+#updateProfileImage > img {
+  width: 2.5vmax;
+  height: 2.5vmax;
+  border-radius: 100%;
+  margin: 1vmax;
+}
+#updateProfileImage > input {
+  display: flex;
+  padding: 0%;
+}
+
+#updateProfileImage > input::file-selector-button {
+  cursor: pointer;
+  width: 100%;
+  z-index: 2;
+  height: 5vh;
+  border: none;
+  margin: 0%;
+  font: 400 0.8vmax cursive;
+  transition: all 0.5s;
+  padding: 0 1vmax;
+  color: $black;
+  background-color: $main-color;
+}
+
+#updateProfileImage > input::file-selector-button:hover {
+  background-color: rgb(0, 0, 0);
+  color: $whcolor;
+}
+
+.updateProfileBtn , .updatePasswordBtn,.forgotPasswordBtn,.resetPasswordBtn {
+  border: none;
+  background-color: $main-color;
+  color: white;
+  font: 300 0.9vmax $font-family;
+  width: 30%;
+  border-radius: 2vmax;
+  padding: 0.8vmax;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.5s;
+  border-radius: 2vmax;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.219);
+  color: $black;
+}
+
+.updateProfileBtn:hover ,.updatePasswordBtn:hover,.forgotPasswordBtn:hover,.resetPasswordBtn:hover  {
+  background-color: $black;
+  border: 1px solid $whcolor;
+  color: $whcolor;
+}
+
+@media screen and (max-width: 600px) {
+  .updateProfileContainer {
+    background-color: white;
+  }
+  .updateProfileBox {
+    width: 100vw;
+    height: 95vh;
+  }
+
+  .updateProfileForm {
+    padding: 5vmax;
+  }
+
+  .updateProfileForm > div > input {
+    padding: 2.5vmax 5vmax;
+    font: 300 1.7vmax cursive;
+  }
+
+  .updateProfileForm > div > svg {
+    font-size: 2.8vmax;
+  }
+
+  #updateProfileImage > img {
+    width: 8vmax;
+    border-radius: 100%;
+  }
+
+  #updateProfileImage > input::file-selector-button {
+    height: 7vh;
+    font: 400 1.8vmax cursive;
+  }
+
+  .updateProfileBtn {
+    font: 300 1.9vmax "Roboto";
+    padding: 1.8vmax;
+  }
+}
+
+
+
+ // update Password // update Password // update Password // update Password // update Password // update Password // update Password // update Password // update Password // update Password
+
+@media screen and (max-width: 600px) {
+  .updatePasswordContainer {
+    background-color: white;
+  }
+  .updatePasswordBox {
+    width: 100vw;
+    height: 95vh;
+  }
+
+  .updatePasswordForm {
+    padding: 5vmax;
+  }
+
+  .updatePasswordForm > div > input {
+    padding: 2.5vmax 5vmax;
+    font: 300 1.7vmax cursive;
+  }
+
+  .updatePasswordForm > div > svg {
+    font-size: 2.8vmax;
+  }
+
+  .updatePasswordBtn {
+    font: 300 1.9vmax "Roboto";
+    padding: 1.8vmax;
+  }
+}
+
+
+
+
+
+

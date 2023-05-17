@@ -1,0 +1,145 @@
+@use "../../../scss/" as *;
+
+.shippingContainer {
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.shippingBox {
+  width: 70vw;
+  border-radius: 3vmax;
+  border: 1px solid $main-color;
+  margin-top: 2vw;
+}
+
+.shippingHeading {
+  text-align: center;
+  color: $whcolor;
+  font: 300 1.3vmax $font-family;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  padding: 1.3vmax;
+  border-bottom: 1px solid $main-color;
+  margin: auto;
+}
+
+.shippingForm {
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding: 2vmax;
+  justify-content: space-evenly;
+  height: 80%;
+  transition: all 0.5s;
+  grid-template-columns: 2fr 2fr;
+}
+
+.shippingForm > div {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  margin: 1vw auto;
+}
+
+.shippingForm > div > input,
+.shippingForm > div > select {
+  padding: 1vmax 4vmax;
+  padding-right: 1vmax;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.267);
+  border-radius: 2vw 2vw 0 2vw;
+  font: 300 1vmax $font-family2;
+  letter-spacing: 0.1rem;
+  background: transparent;
+  border: 1px solid $main-color;
+  color: $whcolor;
+}
+
+.shippingForm > div > input:focus-visible {
+  outline: none;
+}
+
+.shippingForm > div > svg {
+  position: absolute;
+  transform: translateX(1vmax);
+  font-size: 1.6vmax;
+  color: $main-color;
+}
+
+.shippingBtn {
+  background-color: $main-color;
+  color: $black;
+  padding: 0.8vmax 4vmax;
+  font: 300 0.8vmax $font-family;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  margin: 3vh auto  ;
+  margin-bottom: 0;
+  cursor: pointer;
+  position: relative;
+  transition: 0.4s all cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  z-index: 2;
+  width: 70%;
+  border-radius: 2vw;
+
+  &:after {
+    content: "";
+    position: absolute;
+    transition: 0.4s all cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  &:after {
+    width: 0;
+    height: 100%;
+    background: $black;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.4s all cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  &:hover {
+    background: $black;
+    color: $whcolor;
+    border: 1px solid $main-color;
+    &:after {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .shippingBox {
+    width: 100vw;
+    height: 95vh;
+  }
+
+  .shippingHeading {
+    font: 400 6vw "Roboto";
+    padding: 5vw;
+  }
+
+  .shippingForm {
+    padding: 11vw;
+  }
+
+  .shippingForm > div > input,
+  .shippingForm > div > select {
+    padding: 5vw 10vw;
+    font: 300 4vw cursive;
+  }
+
+  .shippingForm > div > svg {
+    font-size: 6vw;
+    transform: translateX(3vw);
+  }
+
+  .shippingBtn {
+    font: 300 4vw "Roboto";
+    padding: 4vw;
+  }
+}

@@ -1,0 +1,123 @@
+ @use "../../scss/" as *;
+
+  
+  .orderDetailsPage > h1 {
+    font: 300 2.5vmax $font-family2;
+    // margin: 2vmax 0;
+    color: $main-color;
+    border-bottom: 1px solid $main-color;
+    display: table;
+    padding: 3vmax;
+    display: flex;
+    padding-bottom: 0%;
+  }
+  
+  .orderDetailsContainer {
+    padding: 3vmax;
+    padding-bottom: 0%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .orderDetailsContainer >.orderDetailsContainerBox> p {
+    font: 100 1.2vmax $font-family;
+    padding: 3vmax 0 0 0;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    border-bottom: 1px solid $whcolor;
+  }
+  
+.orderDetailsContainerBox {
+    margin-right: 10vw;
+}
+  
+  .orderDetailsContainerBox > div {
+    display: flex;
+    margin: 0 0;
+    align-items: center;
+  }
+  
+  .orderDetailsContainerBox > div > p {
+    font: 300 1vmax $font-family2;
+    color: $main-color;
+  }
+  .orderDetailsContainerBox > div > span {
+    margin: 0 1vmax;
+    font: 300 1vmax $font-family2;
+    color: $whcolor;
+  }
+  
+  .orderDetailsCartItems > p {
+    font: 300 1.8vmax $font-family2;
+  }
+  
+  .orderDetailsCartItems {
+    padding: 2vmax 5vmax;
+    border-top: 1px solid rgba(0, 0, 0, 0.164);
+    border: 1px solid $whcolor;
+    border-left: none;
+    border-right: none;
+  }
+  
+  .orderDetailsCartItemsContainer > div {
+    display: flex;
+    font: 300 1vmax $font-family2;
+    align-items: center;
+    margin: 2vmax 0;
+  }
+  
+  .orderDetailsCartItemsContainer > div > img {
+    width: 3vmax;
+  }
+  
+  .orderDetailsCartItemsContainer > div > a {
+    color: $main-color;
+    margin: 0 2vmax;
+    width: 50%;
+    text-decoration: none;
+  }
+  
+  .orderDetailsCartItemsContainer > div > span {
+    font: 300 1vmax $font-family2;
+    color: $whcolor;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .orderDetailsContainer > p {
+      font: 400 6vw "Roboto";
+    }
+  
+    .orderDetailsContainerBox > div {
+      margin: 6vw 0;
+    }
+  
+    .orderDetailsContainerBox > div > p {
+      font: 400 4vw "Roboto";
+    }
+    .orderDetailsContainerBox > div > span {
+      font: 100 4vw "Roboto";
+    }
+  
+    .orderDetailsCartItems > p {
+      font: 400 6vw "Roboto";
+    }
+  
+    .orderDetailsCartItemsContainer > div {
+      font: 400 4vw "Roboto";
+      margin: 4vw 0;
+    }
+  
+    .orderDetailsCartItemsContainer > div > img {
+      width: 10vw;
+    }
+  
+    .orderDetailsCartItemsContainer > div > a {
+      margin: 2vw;
+      width: 30%;
+    }
+  
+    .orderDetailsCartItemsContainer > div > span {
+      font: 100 4vw "Roboto";
+    }
+  }
+  

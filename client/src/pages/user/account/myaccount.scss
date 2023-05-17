@@ -1,0 +1,14 @@
+#covnav {
+  height: 15vh;
+}
+#logoutuser {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  span {
+    margin: 0 1.7vmax 0 0.8vmin;
+  }
+}

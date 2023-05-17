@@ -1,0 +1,51 @@
+@use '../../../scss/' as *;
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+    background-color: $black;
+    margin-left: 0.2vw;
+  }
+  
+  .sidebar > a:first-child {
+    padding: 0;
+  }
+  .sidebar > a > img {
+    width: 70%;
+    transition: all 0.5s;
+    margin: auto;
+    display: flex;
+    margin-bottom: 1vw;
+  }
+  
+  .css-1g86id8-MuiTreeItem-content {
+    padding: 0 !important;
+  }
+  .sidebar > a > img:hover {
+    filter: drop-shadow(0 0 10px $main-color);
+  }
+  .sidebar a {
+    text-decoration: none;
+    color: white;
+    font: 200 1rem "Roboto";
+    padding: 2rem;
+    transition: all 0.5s;
+  }
+  .sidebar a:hover {
+    color: $main-color;
+    transform: scale(1.1);
+  }
+  
+  .sidebar a > P {
+    display: flex;
+    align-items: center;
+  }
+  .sidebar a > p > svg {
+    margin-right: 0.5rem;
+  }
+  
+  .MuiTypography-root {
+    background-color: #fff !important;
+  }
+  

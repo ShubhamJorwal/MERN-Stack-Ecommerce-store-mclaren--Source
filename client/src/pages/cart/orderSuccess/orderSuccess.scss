@@ -1,0 +1,78 @@
+@use "../../../scss/" as *;
+
+.orderSuccess {
+  margin: auto;
+  text-align: center;
+  padding-top: 15vw;
+  padding-bottom: 1vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.orderSuccess > svg {
+  font-size: 7vmax;
+  color: $main-color;
+}
+.orderSuccess > p {
+    margin: 2vw;
+    margin-bottom: 0;
+  color: $whcolor;
+  font: 300 1.5vmax $font-family;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+    margin-bottom: 3vw;
+}
+.orderSuccess > a {
+  text-decoration: none;
+  background-color: $main-color;
+  color: $black;
+  padding: 0.8vmax 4vmax;
+  font: 300 0.8vmax $font-family;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  margin: auto;
+  cursor: pointer;
+  position: relative;
+  transition: 0.4s all cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  z-index: 2;
+
+  &:after {
+    content: "";
+    position: absolute;
+    transition: 0.4s all cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  &:after {
+    width: 0;
+    height: 100%;
+    background: $black;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.4s all cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  &:hover {
+    color: $whcolor;
+    border: 1px solid $main-color;
+    &:after {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .orderSuccess > a {
+    padding: 3vw 6vw;
+    font: 400 4vw "Roboto";
+    margin: 2vmax;
+  }
+
+  .orderSuccess > svg {
+    font-size: 20vw;
+  }
+  .orderSuccess > p {
+    margin: 2vmax;
+    font-size: 5vw;
+  }
+}

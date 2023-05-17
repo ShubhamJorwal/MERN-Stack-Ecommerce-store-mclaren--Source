@@ -1,0 +1,17 @@
+@use '../../../scss/' as *;
+.MuiStepConnector-line {
+    display: none !important;
+  }
+  .css-10mg1vw-MuiStepper-root {
+    width: 50vw;
+    margin: 1vmax auto;
+  }
+  .MuiStepConnector-root {
+    height: 1px;
+    background-color: $white;
+  }
+  
+  .MuiStepConnector-active,
+  .MuiStepConnector-completed {
+    background-color: $main-color ; 
+  }

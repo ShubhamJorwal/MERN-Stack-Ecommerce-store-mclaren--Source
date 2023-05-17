@@ -1,0 +1,125 @@
+@use "../../scss/" as *;
+
+.myOrdersPage {
+  width: 100vw;
+  max-width: 70%;
+  margin: auto;
+  box-sizing: border-box;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1vw;
+}
+
+#myOrdersHeading {
+    text-align: center;
+    font: 500 1.2vmax $font-family2;
+    padding: 0.5vmax;
+    color: $black;
+    transition: all 0.5s;
+    background-color: $whcolor;
+    //   border: 1px solid $white;
+}
+
+
+
+
+.myOrdersTable {
+    background: $black;
+    border: 1px solid $main-color;
+  border-bottom: 1px solid $white;
+  div {
+    border: none;
+    font: 300 1vmax $font-family2;
+    overflow: hidden;
+    outline: none !important;
+  }
+}
+.css-yrdy0g-MuiDataGrid-columnHeaderRow {
+  border-bottom: 1px solid $whcolor !important;
+}
+
+.css-78c6dr-MuiToolbar-root-MuiTablePagination-toolbar,
+.css-pqjvzy-MuiSvgIcon-root-MuiSelect-icon,
+.css-zylse7-MuiButtonBase-root-MuiIconButton-root.Mui-disabled {
+  color: $whcolor !important;
+  outline: none;
+}
+
+.css-6h1dhi-MuiDataGrid-root
+  .MuiDataGrid-row:not(.MuiDataGrid-row--dynamicHeight)
+  > .MuiDataGrid-cell {
+//   justify-content: center;
+  border: none;
+}
+
+.myOrdersTable a {
+  color: $main-color;
+  transition: all 0.5s;
+}
+.css-6h1dhi-MuiDataGrid-root .MuiDataGrid-withBorderColor {
+  &:hover {
+    width: unset;
+    max-width: unset;
+
+    svg {
+        color: $main-color;
+    }
+  }
+}
+
+.myOrdersTable a:hover,
+.css-de9k3v-MuiDataGrid-selectedRowCount {
+  color: $white;
+}
+.css-6h1dhi-MuiDataGrid-root.MuiDataGrid-autoHeight {
+  border: none;
+}
+
+.css-6h1dhi-MuiDataGrid-root .MuiDataGrid-row {
+  border-bottom: 1px solid $main-color;
+}
+.css-6h1dhi-MuiDataGrid-root .MuiDataGrid-cell:focus {
+  outline: none !important;
+}
+.MuiDataGrid-columnHeader {
+  background-color: $black;
+  padding: 1vmax !important;
+  border: 1px solid $main-color;
+}
+
+.MuiDataGrid-columnHeader div {
+  color: rgb(255, 255, 255);
+  font: 500 1.1vmax "Roboto" !important;
+}
+
+.MuiDataGrid-iconSeparator {
+  display: none !important;
+}
+
+@media screen and (max-width: 600px) {
+  .myOrdersPage {
+    padding: 0;
+    height: 93vh;
+  }
+
+  #myOrdersHeading {
+    font: 400 2.2vmax "Roboto";
+    padding: 4vw;
+  }
+
+  .myOrdersTable div {
+    font: 300 4vw "Roboto";
+  }
+
+  .MuiDataGrid-columnHeader {
+    padding: 20px !important;
+  }
+
+  .MuiDataGrid-columnHeader div {
+    font: 500 5vw "Roboto" !important;
+  }
+}

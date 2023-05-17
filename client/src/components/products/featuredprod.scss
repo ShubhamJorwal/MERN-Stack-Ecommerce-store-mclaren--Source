@@ -1,0 +1,21 @@
+@use "../../scss/" as *;
+
+#featurepro {
+  width: 100%;
+  margin: 0vmax 0;
+  background-color: $black;
+
+  #mainhead {
+    padding-top: 6vmin;
+  }
+}
+#prodcontain {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  width: 95vw;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}

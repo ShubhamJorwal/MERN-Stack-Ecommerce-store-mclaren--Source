@@ -1,0 +1,57 @@
+@use "../../../scss/" as *;
+
+.productListContainer {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: $black;
+  border-left: 1px solid $whcolor;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#productListHeading {
+  font: 300 2rem $font-family;
+  padding: 0.5vmax;
+  box-sizing: border-box;
+  color: $whcolor;
+  transition: all 0.5s;
+  text-align: center;
+}
+
+.productListTable {
+  background-color: $black;
+  border: 1px solid rgba(56, 176, 245, 0.342) !important;
+  width: 75vw;
+  margin: auto;
+}
+
+.productListTable div {
+  font: 300 0.8vmax $font-family;
+  border: none !important;
+  color: $whcolor;
+}
+
+.productListTable a,
+.productListTable button {
+  color: $main-color;
+  transition: all 0.5s;
+}
+
+.productListTable a:hover {
+  color: $whcolor;
+}
+
+.MuiDataGrid-columnHeader div {
+  color: $black;
+}
+
+.MuiDataGrid-columnHeader {
+  background-color: wheat;
+}
+
+@media screen and (max-width: 600px) {
+  .productListTable div {
+    font: 300 4vw $font-family;
+  }
+}

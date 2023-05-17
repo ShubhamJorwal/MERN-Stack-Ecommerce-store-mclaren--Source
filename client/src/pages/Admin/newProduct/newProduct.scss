@@ -1,0 +1,188 @@
+@use "../../../scss/" as *;
+
+.newProductContainer {
+  width: 100%;
+  box-sizing: border-box;
+  border-left: 1px solid $whcolor;
+  display: flex;
+  height: 100vh;
+}
+.newProductContainer h1 {
+  color: $whcolor;
+  font: 300 2rem $font-family;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+
+.createProductForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 100%;
+  background-color: $black;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.267);
+}
+
+
+.createProductForm > div {
+  display: flex;
+  width: 50%;
+  align-items: center;
+}
+.createProductForm > div > input,
+.createProductForm > div > select,
+.createProductForm > div > textarea {
+  padding: 1vmax 4vmax;
+  padding-right: 1vmax;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ffffff78;
+  border-radius: 2vw;
+  font: 300 0.9vmax $font-family;
+  outline: none;
+  background: transparent;
+  color: $whcolor;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.createProductForm > div > svg {
+  position: absolute;
+  transform: translateX(1vmax);
+  font-size: 1.6vmax;
+  color: $main-color;
+}
+
+select {
+  option {
+    color: $black;
+  }
+}
+
+#createProductFormFile > input {
+  display: flex;
+  padding: 0%;
+  width: 30%;
+  margin: auto;
+  border-radius: 2vw;
+}
+
+#createProductFormFile > input::file-selector-button {
+  cursor: pointer;
+  width: 100%;
+  z-index: 2;
+  height: 5vh;
+  border: none;
+  margin: 0%;
+  font: 600 0.7vmax $font-family;
+  text-transform: uppercase;
+  transition: all 0.5s;
+  padding: 0 1vmax;
+  color: rgba(0, 0, 0, 0.623);
+  background-color: $main-color;
+}
+
+#createProductFormFile > input::file-selector-button:hover {
+  background-color: $black;
+  color: $whcolor;
+}
+
+#createProductFormImage {
+  width: 30vw;
+  overflow: auto;
+  padding: 0.5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-left: 1px solid $whcolor;
+}
+
+#createProductFormImage > img {
+  width: 20vw;
+  margin: 0.5vw;
+}
+#createProductBtn {
+  border: none;
+  background-color: $main-color;
+  color: $black;
+  font: 300 0.9vmax $font-family;
+  width: 40%;
+  padding: 0.8vmax;
+  cursor: pointer;
+  transition: all 0.5s;
+  border-radius: 2vw;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.219);
+  border: 1px solid transparent;
+}
+
+#createProductBtn:hover {
+  background-color: $black;
+  color: $whcolor;
+  border: 1px solid $whcolor;
+}
+
+@media screen and (max-width: 600px) {
+  .newProductContainer {
+    background-color: rgb(255, 255, 255);
+  }
+  .createProductForm {
+    padding: 5vmax;
+  }
+
+  .createProductForm > div > input,
+  .createProductForm > div > select,
+  .createProductForm > div > textarea {
+    padding: 2.5vmax 5vmax;
+    font: 300 1.7vmax cursive;
+  }
+
+  .createProductForm > div > svg {
+    font-size: 2.8vmax;
+  }
+
+  #createProductFormFile > img {
+    width: 8vmax;
+    border-radius: 100%;
+  }
+
+  #createProductFormFile > input::file-selector-button {
+    height: 7vh;
+    font: 400 1.8vmax cursive;
+  }
+
+  #createProductBtn {
+    font: 300 1.9vmax $font-family;
+    padding: 1.8vmax;
+  }
+}
+
+// update product css
+#updateproductImage {
+  overflow: hidden;
+  width: 30vw;
+  padding: 0.5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-left: 1px solid $whcolor;
+  div {
+    width: 30vw;
+    overflow: auto;
+    padding: 0.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-left: 1px solid $whcolor;
+
+    img {
+      width: 20vw;
+      margin: 0.5vw;
+    }
+  }
+}

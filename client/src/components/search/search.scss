@@ -1,0 +1,57 @@
+@use "../../scss/" as *;
+
+.searchBox {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0%;
+  left: 0;
+}
+
+.searchBox > input[type="text"] {
+  box-shadow: 0 0 65px rgba(0, 129, 189, 0.713);
+  background-color: $black;
+  border: 1px solid $white;
+  border-right: none;
+  color: rgba(0, 0, 0, 0.637);
+  padding: 1vmax 2vmax;
+  width: 30vw;
+  border-radius: 50px 0 0 50px ;
+  font-size: 2vmin;
+}
+
+.searchBox > input[type="submit"] {
+  border-radius: 0%;
+  background-color: $main-color;
+  border: 1px solid $white;
+  padding: 1vmax;
+  border-radius:0 50px 50px 0;
+  border-left: none;
+  width: 15vw;
+  cursor: pointer;
+  color: white;
+  transition: all 0.5s;
+  font-size: 2vmin;
+}
+
+.searchBox > input[type="submit"]:hover {
+  background-color: rgb(55, 97, 214);
+}
+
+@media screen and (max-width: 600px) {
+  .searchBox > input[type="text"] {
+    width: 100%;
+    font: 300 4vw cursive;
+    height: 10%;
+  }
+
+  .searchBox > input[type="submit"] {
+    height: 10%;
+    width: 30%;
+    font: 300 4vw "Roboto";
+  }
+}

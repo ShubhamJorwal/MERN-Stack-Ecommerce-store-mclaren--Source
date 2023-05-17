@@ -1,0 +1,65 @@
+@use '../../scss/' as *;
+
+#aboutus {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+  }
+  
+  h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-family: $font-family;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin: 20px 0 10px;
+    font-family: $font-family;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-family: $font-family2;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+  }
+  
+
+  // contact us
+       
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin: 10vh 0;
+}
+
+.contact-info a {
+    text-decoration: none;
+    margin: 0 20px;
+    color: $whcolor;
+    font-size: 1.3vw;
+    font-family: $font-family;
+    font-weight: 300;
+    letter-spacing: 0.05rem;
+    padding: 1vw;
+}
+
+.contact-info a:hover {
+    color: $main-color;
+}
+
+.contact-info i {
+    margin-right: 5px;
+}

@@ -1,0 +1,201 @@
+@use "../../../scss/" as *;
+
+#homesli {
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  position: relative;
+}
+
+#topblacklay {
+  background-color: rgba(0, 0, 0, 0.501);
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100vh;
+}
+
+.cont-slider {
+  position: relative;
+  height: 100vh;
+  max-height: 100vh;
+  width: auto;
+  min-width: 100vw;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.slider {
+  animation: sliding 20s ease-out 0s backwards infinite;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 500%;
+  height: 100%;
+}
+.slide {
+  display: inline-block;
+  position: relative;
+  width: 20%;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+.slide span {
+  text-transform: uppercase;
+  font-family: $font-family;
+  z-index: 2;
+  color: #fff;
+  position: absolute;
+  left: 5vw;
+  top: 35vh;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  font-size: 35px;
+  letter-spacing: 0.1em;
+  line-height: 3.7rem;
+}
+.slide .slide01 {
+  animation-name: upward-text;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+.slide .slide02 {
+  animation-name: upward-text;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-delay: 4s;
+}
+.slide .slide03 {
+  animation-name: upward-text;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-delay: 8s;
+}
+.slide .slide04 {
+  animation-name: upward-text;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-delay: 12s;
+}
+.slide .slide05 {
+  animation-name: upward-text;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-delay: 16s;
+}
+
+.butnn {
+  // width: 10vw;
+  color: white;
+  font-family: $font-family;
+  z-index: 2;
+  left: 5vw;
+  top: 55vh;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  line-height: 3rem;
+  padding: 0 38px;
+  margin-top: 4.5vh;
+  border: 1px solid $whcolor;
+  transition: 0.4s all cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  position: absolute;
+  z-index: 2;
+  &:after {
+    content: "";
+    position: absolute;
+    transition: 0.4s all cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  &:after {
+    width: 0;
+    height: 100%;
+    background: $main-color;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.4s all cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  &:hover {
+    color: $black;
+    border: none;
+    &:after {
+      width: 100%;
+    }
+  }
+}
+
+#expfac {
+  color: rgb(255, 255, 255);
+  border: 1px solid white;
+  &:hover {
+    color: $black;
+    border: none;
+  }
+}
+
+.one {
+  background-image: url(https://wallpaperaccess.com/full/443391.jpg);
+}
+.two {
+  background-image: url(https://images.hdqwalls.com/wallpapers/mclaren-720s-2020-4k-oa.jpg);
+}
+.three {
+  background-image: url(https://mclaren.scene7.com/is/image/mclaren/McLarenArtura-16:crop-16x9?wid=1980&hei=1114);
+}
+.four {
+  background-image: url(https://watermark.lovepik.com/photo/20211210/large/lovepik-car-tire-close-up-picture_501771657.jpg);
+}
+.five {
+  background-image: url(https://images7.alphacoders.com/460/460370.jpg);
+}
+
+@keyframes sliding {
+  0% {
+    left: 0%;
+  }
+  15% {
+    left: 0%;
+  }
+  20% {
+    left: -100%;
+  }
+  35% {
+    left: -100%;
+  }
+  40% {
+    left: -200%;
+  }
+  55% {
+    left: -200%;
+  }
+  60% {
+    left: -300%;
+  }
+  75% {
+    left: -300%;
+  }
+  80% {
+    left: -400%;
+  }
+  95% {
+    left: -400%;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes upward-text {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

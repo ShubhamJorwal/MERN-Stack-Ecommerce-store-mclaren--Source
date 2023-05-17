@@ -1,0 +1,88 @@
+@use "../../scss/" as *;
+// main content
+
+#footerwh {
+  width: 100%;
+  bottom: 0;
+  background-image: url(https://www.wallpaperbetter.com/wallpaper/763/719/679/mclaren-p1-2013related-car-wallpapers-2K.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container20 {
+  max-width: 1660px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.427);
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-family: $font-family;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+  }
+}
+
+.footer {
+  position: relative;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+
+  &__content {
+    width: 100vw;
+
+    &__logo {
+      @include flex(center, center);
+      margin-bottom: 3rem;
+      padding-top: 3rem;
+
+      img {
+        width: 11vw;
+      }
+    }
+
+    &__menus {
+      margin-bottom: 2vh;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: space-around;
+      display: flex;
+
+      @include mobile {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    &__menu {
+      @include flex(flex-start, flex-start);
+      flex-direction: column;
+      margin-top: 1rem;
+
+      font-size: 0.9rem;
+      font-weight: 600;
+
+      & > * ~ * {
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+#paymethods {
+  display: flex;
+  div {
+    margin: 0 0.2vw;
+  }
+}
+#copyright {
+  color: white;
+}
+.copyright1 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3rem;
+}

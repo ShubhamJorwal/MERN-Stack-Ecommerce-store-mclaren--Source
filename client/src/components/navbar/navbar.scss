@@ -1,0 +1,148 @@
+@use "../../scss/" as *;
+
+div > #nav {
+  background-color: transparent;
+  padding: 2vw 0;
+  z-index: 2;
+  position: fixed;
+  transition: 0.5s;
+  height: 5vh;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.253);
+
+  #sec01 {
+    display: flex;
+    align-items: center;
+    #currency {
+      text-transform: uppercase;
+      position: fixed;
+      left: 2vw;
+      a {
+        color: $white;
+        font-size: 12px;
+      }
+    }
+
+    #logo {
+      text-transform: uppercase;
+      position: fixed;
+      margin: 0 46vw;
+
+      // left: 0;
+      a {
+        color: $white;
+
+        img {
+          width: 11vw;
+        }
+      }
+    }
+
+    #secaracc {
+      position: fixed;
+      right: 2vw;
+      ul {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        li {
+          list-style: none;
+          margin: 0 0.4vw;
+
+          a {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+  #megamenu {
+    margin-top: 3vh;
+    padding-bottom: 1vh;
+    position: fixed;
+    width: -webkit-fill-available;
+    background: rgba(40, 205, 255, 0.137);
+
+    ul {
+      display: flex;
+      list-style: none;
+      justify-content: center;
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+      font-size: 0.7vw;
+      padding: 0;
+
+      li > a {
+        text-decoration: none;
+        margin: 0 21px;
+        font-family: $font-family;
+        color: $white;
+        font-weight: 500;
+        padding-bottom: 0.2vw;
+        transition: 0.5s all;
+        &:hover {
+          transform: scale(1.2);
+          border-bottom: 1px solid $main-color;
+        }
+      }
+    }
+  }
+}
+
+#nav:hover {
+  background-color: black;
+}
+
+// close
+.scrollbn {
+  background-color: black !important;
+}
+
+#homehole {
+  background: rgba(0, 0, 0, 0.262);
+  height: 120vh;
+  width: 100%;
+  position: fixed;
+  margin-top: -180px;
+}
+
+// Admin navbar css
+#adnavbar {
+  position: fixed;
+  right: 1vmax;
+  top: 0.5vmax;
+  z-index: 1;
+}
+
+.css-1w9dtzg-MuiSpeedDial-root {
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.452);
+  }
+}
+
+.spdialmainicon {
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+  transform: translateZ(0px) rotate(180deg) !important;
+}
+.speedDialIcon {
+  color: $black !important;
+  background-color: $whcolor !important;
+  border: 1px solid $main-color !important;
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 100%;
+  transition: 0.2s all;
+  transform: translateZ(0px) rotate(180deg) !important;
+
+  &:hover {
+    transition: 0.7s;
+    transform: translateZ(0px) rotate(-180deg) scale(1.2) !important;
+  }
+
+  svg {
+    font-size: 1vw !important;
+  }
+}
