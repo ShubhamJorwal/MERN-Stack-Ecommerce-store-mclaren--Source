@@ -11,7 +11,7 @@ const ReviewCard = ({ review }) => {
     activeColor: "#03a9f4",
     edit: false,
   };
-  const { user } = useSelector((state) => state.user);
+  // const { user } = useSelector((state) => state.user);
 
   return (
     <>
@@ -19,7 +19,7 @@ const ReviewCard = ({ review }) => {
         <div id="firstdivca">
           <img style={{width:"3vw" , height:"3vw"}}
             id="revcardimg"
-            src={user.avatar.url} alt={user.name}
+            src="https://tibatu.com/wp-content/uploads/2020/10/flat-business-man-user-profile-avatar-icon-vector-4333097.jpg" alt={user.name}
           />
           <p className="namerev">{review.name}</p>
           <ReactStars {...options} />

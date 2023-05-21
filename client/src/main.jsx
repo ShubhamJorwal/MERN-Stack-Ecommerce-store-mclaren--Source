@@ -5,9 +5,9 @@ import router from "./Rconfig/Router";
 import './main.scss'
 import 'react-toastify/dist/ReactToastify.css';
 
-// To use backend apies in client
-import axios from "axios";
-axios.defaults.baseURL = `http://localhost:5000`
+// // To use backend apies in client
+// import axios from "axios";
+// axios.defaults.baseURL = `http://localhost:5000`
 
 
 import { Provider } from "react-redux";
