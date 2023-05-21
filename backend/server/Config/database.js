@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 
 
 const connectDatabase = () => {
-  const mongoURI = process.env.mongoURI || "mongodb+srv://Shubham_sj:shubhamjorwal123@mclarenecom.qtypoch.mongodb.net/"
+  const mongoURI = process.env.mongoURI || "mongodb+srv://Shubham_sj:shubhamjorwal123@mclarenecom.qtypoch.mongodb.net/Mclaren_Ecommerce?retryWrites=true&w=majority"
   mongoose
     .connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then((data) => {

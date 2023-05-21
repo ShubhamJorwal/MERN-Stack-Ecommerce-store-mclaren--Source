@@ -25,6 +25,7 @@
   }
   #rstrs {
     display: flex;
+    align-items: center;
     justify-content: center;
     color: $whcolor;
     font: 300 1vw $font-family2;
@@ -129,7 +130,7 @@
   div > ul {
     li {
         margin: 1vmin;
-        font-size: 2vmin;
+        font-size: 1vw;
         display: table;
         border-bottom: 1px solid $main-color;
         color: $whcolor;

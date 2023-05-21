@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
-import Heading from '../../components/heading/Heading'
-import './aboutus.scss'
+import Heading from "../../components/heading/Heading";
+import "./aboutus.scss";
 
 const AboutUs = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <Navbar />
@@ -76,7 +80,7 @@ const AboutUs = () => {
           and captivating user interface.
         </p>
       </div>
-      <Heading heading={"Created by sj"}/>
+      <Heading heading={"Created by sj"} />
       <div id="freespace"></div>
       <div id="freespace"></div>
       <div id="borderBottom"></div>

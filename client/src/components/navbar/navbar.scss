@@ -146,3 +146,14 @@ div > #nav {
     font-size: 1vw !important;
   }
 }
+
+
+.OrderAdmin {
+  a {
+    // font-size: 1.2vw;
+    text-transform: uppercase;
+    font-family: $font-family;
+    letter-spacing: .2rem;
+    font-size: 0.8vw;
+  }
+}

@@ -74,7 +74,7 @@ const Allproducts = () => {
           <div id="filterbox" className="colscollec">
             <div id="">
               <Typography>customize price</Typography>
-              <Box width={300}>
+              <Box width={200}>
                 <Slider
                   size="small"
                   value={price}

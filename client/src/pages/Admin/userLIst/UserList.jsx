@@ -60,7 +60,7 @@ const UserList = () => {
     {
       field: "name",
       headerName: "Name",
-      minWidth: 150,
+      minWidth: 100,
       flex: 0.5,
     },
 
@@ -68,7 +68,7 @@ const UserList = () => {
       field: "role",
       headerName: "Role",
       type: "number",
-      minWidth: 150,
+      minWidth: 80,
       flex: 0.3,
       cellClassName: (params) => {        
         const rowId = params.row.id;

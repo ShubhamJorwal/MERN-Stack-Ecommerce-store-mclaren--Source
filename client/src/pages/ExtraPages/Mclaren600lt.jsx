@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../../components/navbar/Navbar";
 import TopBanner from "../../components/topbanner/TopBanner";
@@ -27,6 +27,9 @@ import img14 from "../../assets/mc600lt/06.webp";
 //
 
 const Mclaren600lt = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Navbar />

@@ -47,8 +47,8 @@ const Navbar = () => {
           <div id="logo"><Link to="/"><img src={logo} alt="" /></Link></div>
           <div id="secaracc">
           <ul>
-            <li>{user && user.role === "admin" ? <Link to="/admin/dashboard">Admin</Link>  : "" }</li>
-            <li><Link to="/orders">Orders</Link></li>        
+            <li className="OrderAdmin">{user && user.role === "admin" ? <Link to="/admin/dashboard">Admin</Link>  : "" }</li>
+            <li className="OrderAdmin"><Link to="/orders">Orders</Link></li>        
             <li><Link to="/search"><FiSearch  size={"1.4vw"}/></Link></li>
             <li><Link to="/cart"><AiOutlineShoppingCart  size={"1.4vw"}/></Link></li>
           <li>{isAuthenticated ? <UserOptions user={user} /> :

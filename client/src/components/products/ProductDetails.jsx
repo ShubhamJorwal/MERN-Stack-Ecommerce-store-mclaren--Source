@@ -162,11 +162,14 @@ const ProductDetails = () => {
                     alt={`${0} Slide`}
                     onClick={() => handleImageClick(selectedImage)}
                   />
-                {isFullscreen && (
-                  <div className="fullscreen-overlay" onClick={closeFullscreen}>
+                  {isFullscreen && (
+                    <div
+                      className="fullscreen-overlay"
+                      onClick={closeFullscreen}
+                    >
                       <img src={fullscreenImage} alt="Fullscreen Image" />
-                  </div>
-                )}
+                    </div>
+                  )}
                 </div>{" "}
                 <div id="thirdcol">
                   <h2>{product.name}</h2>

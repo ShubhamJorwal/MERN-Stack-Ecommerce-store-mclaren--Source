@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../../components/navbar/Navbar";
 import TopBanner from "../../components/topbanner/TopBanner";
 import mclaren from "../../assets/mclaren01.mp4";
@@ -9,6 +9,9 @@ import { ToastContainer, toast } from "react-toastify";
 import PartProduct from "../../components/partProduct/PartProduct";
 
 const Mclaren = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Navbar />
